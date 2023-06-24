@@ -1,4 +1,48 @@
-const loadCountries = () => {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 style="text-align: center;">Load Countries</h2>
+    <div id="container" class="countries">
+
+    </div>
+
+    <script src="./country.js"></script>
+</body>
+</html>
+
+<!-- css -->
+
+body{
+    border: 2px solid red;
+     
+ }
+ 
+ #container{
+     display: grid;
+     gap:10px;
+     grid-template-columns: repeat(3, 1fr);
+ }
+ 
+ #container{
+     border: 3px solid goldenrod;
+     border-radius: 10px;
+     padding: 10px;
+ }
+ 
+ #container img{
+     width: 200px;
+ }
+
+ <!-- js -->
+
+ const loadCountries = () => {
     fetch('https://restcountries.com/v3.1/all')
         .then(res => res.json())
         .then(data => displayCountries(data))
