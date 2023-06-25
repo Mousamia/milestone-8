@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza",
+        "category": "Italian",
+        "price": 10.99,
+        "ingredients": [
+            "dough",
+            "tomato sauce",
+            "cheese",
+            "pepperoni"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Sushi",
+        "category": "Japanese",
+        "price": 12.99,
+        "ingredients": [
+            "rice",
+            "raw fish",
+            "seaweed",
+            "soy sauce"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Burger",
+        "category": "American",
+        "price": 8.99,
+        "ingredients": [
+            "beef patty",
+            "bun",
+            "lettuce",
+            "tomato",
+            "cheese"
+        ]
+    }
+]
