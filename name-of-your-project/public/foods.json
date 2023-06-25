@@ -35,5 +35,43 @@
             "tomato",
             "cheese"
         ]
+    },
+    {
+        "id": 4,
+        "name": "Tacos",
+        "category": "Mexican",
+        "price": 9.99,
+        "ingredients": [
+            "tortillas",
+            "beef/chicken",
+            "salsa",
+            "guacamole"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Pad Thai",
+        "category": "Thai",
+        "price": 11.99,
+        "ingredients": [
+            "rice noodles",
+            "shrimp/tofu",
+            "eggs",
+            "peanuts",
+            "tamarind sauce"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Salad",
+        "category": "Healthy",
+        "price": 7.99,
+        "ingredients": [
+            "lettuce",
+            "tomatoes",
+            "cucumbers",
+            "carrots",
+            "dressing"
+        ]
     }
 ]
