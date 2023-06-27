@@ -13,7 +13,6 @@ const Food = () => {
       .then(data => setFoods(data))
   }, [])
 
-  console.log(foods);
 
   return (
     <div >
@@ -22,6 +21,7 @@ const Food = () => {
       <div className='container'>
         {
           foods.map(food => <FoodItem
+          key={food.id}
             food={food}
           ></FoodItem>)
         }

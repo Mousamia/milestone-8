@@ -2,22 +2,39 @@
 // manage localstorge
 const addToLoclStorge = id => {
     // it will give the value of id
-    const kuntity = localStorage.getItem(id);
-    console.log(kuntity);
 
-    let shoppingCart;
-   
-   
+    let foodCart = {};
+    // getting the object
+    const storedCart = localStorage.getItem("food-cart");
+
+    if(storedCart){
+      // converting the object into string
+      foodCart = JSON.parse(storedCart);
+
+    }
+
+    else{
+      foodCart = {};
+    }
+
+
+    const kuntity = foodCart[id];
+    console.log(typeof(kuntity));
+
+    
+  //  icresing vlue of object property
     if(kuntity){
-      let newKuntity = parseInt(kuntity) + 1;
-      localStorage.setItem(id, newKuntity);
+      let newKuntity = kuntity + 1;
+      foodCart[id] = newKuntity;
 
 
     }
     else {
-        localStorage.setItem(id, 1);
-        console.log("one item added");
+        foodCart[id] = 1;
     }
+
+    localStorage.setItem("food-cart", JSON.stringify(foodCart));
+
 }
 
 export { addToLoclStorge };

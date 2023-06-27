@@ -6,7 +6,6 @@ import { addToLoclStorge } from '../Utilities/fakedata';
 
 
 const FoodItem = ({ food }) => {
-    // console.log(props);
 
     const handleBtn = (id) => {
         console.log("btn clicked of id", id);
