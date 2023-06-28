@@ -19,7 +19,6 @@ const addToLoclStorge = id => {
 
 
     const kuntity = foodCart[id];
-    console.log(typeof(kuntity));
 
     
   //  icresing vlue of object property
@@ -34,6 +33,8 @@ const addToLoclStorge = id => {
     }
 
     localStorage.setItem("food-cart", JSON.stringify(foodCart));
+
+    return foodCart;
 
 }
 
