@@ -4,8 +4,7 @@ import { addToLoclStorge } from '../Utilities/fakedata';
 
 const Navbar = () => {
     const foodSved =  addToLoclStorge();
-    console.log(foodSved);
-
+   
     return (
         <div>
             Food added : <span> {foodSved[1]}  </span>

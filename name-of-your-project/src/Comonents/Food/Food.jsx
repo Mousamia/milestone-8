@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import './Food.css'
 import FoodItem from '../FoodItem/FoodItem';
+import Navbar from '../Navbar/Navbar';
 
 
 const Food = () => {
@@ -16,6 +17,7 @@ const Food = () => {
 
   return (
     <div >
+     
       <h1>Food Menu</h1>
 
       <div className='container'>
