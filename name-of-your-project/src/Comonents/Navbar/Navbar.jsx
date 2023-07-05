@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { addToLoclStorge } from '../Utilities/fakedata';
+import {  getfoodCart } from '../Utilities/fakedata';
 
 const Navbar = () => {
+    let storedCart = getfoodCart();
+    console.log(storedCart);
   
     return (
         <div>

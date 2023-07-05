@@ -2,14 +2,14 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './FoodItem.css'
-import { addToLoclStorge } from '../Utilities/fakedata';
+import { addToDb } from '../Utilities/fakedata';
 
 
 const FoodItem = ({ food }) => {
 
     const handleBtn = (id) => {
         console.log("btn clicked of id", id);
-        addToLoclStorge(id);
+        addToDb(id);
     }
 
     const { name, id, price, category, ingredients } = food;

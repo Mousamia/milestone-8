@@ -14,6 +14,8 @@ const Food = () => {
       .then(data => setFoods(data))
   }, [])
 
+  
+
 
   return (
     <div >
