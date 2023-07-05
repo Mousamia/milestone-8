@@ -6,6 +6,7 @@ const addToLoclStorge = id => {
     let foodCart = {};
     // getting the object
     const storedCart = localStorage.getItem("food-cart");
+    console.log(storedCart);
 
     if(storedCart){
       // converting the object into string

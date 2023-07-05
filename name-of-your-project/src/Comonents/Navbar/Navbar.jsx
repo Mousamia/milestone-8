@@ -3,11 +3,10 @@ import React from 'react';
 import { addToLoclStorge } from '../Utilities/fakedata';
 
 const Navbar = () => {
-    const foodSved =  addToLoclStorge();
-   
+  
     return (
         <div>
-            Food added : <span> {foodSved[1]}  </span>
+            Food added : <span>  </span>
         </div>
     );
 };
