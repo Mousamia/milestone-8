@@ -14,13 +14,12 @@ const Food = () => {
       .then(data => setFoods(data))
   }, [])
 
-  
-
-
   return (
     <div >
      
       <h1>Food Menu</h1>
+
+      
 
       <div className='container'>
         {
@@ -30,8 +29,8 @@ const Food = () => {
           ></FoodItem>)
         }
 
-
       </div>
+     
     </div>
   );
 };

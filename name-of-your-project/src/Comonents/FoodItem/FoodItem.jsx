@@ -1,15 +1,19 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './FoodItem.css'
-import { addToDb } from '../Utilities/fakedata';
+import { addToDb, getfoodCart } from '../Utilities/fakedata';
+import Navbar from '../Navbar/Navbar';
 
 
 const FoodItem = ({ food }) => {
+    const [cart, setCart] = useState([]);
 
     const handleBtn = (id) => {
         console.log("btn clicked of id", id);
-        addToDb(id);
+        const newCart = [...cart, food];
+        setCart(newCart);
+        addToDb(food.id);
     }
 
     const { name, id, price, category, ingredients } = food;
@@ -22,7 +26,7 @@ const FoodItem = ({ food }) => {
             <button onClick={() => handleBtn(id)} className='btn'>
                 add to cart
             </button>
-
+          
         </div>
     );
 };
